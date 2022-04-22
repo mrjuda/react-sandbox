@@ -1,8 +1,18 @@
 // index.js
+import './index.scss';
+import _ from 'lodash';
 
-let test1 = 'test1';
-let test2 = 'test2';
+// const dyn = document.getElementById('dyn');
 
-test1 = test2;
+function component() {
+  const element = document.createElement('h1');
 
-test2 = test1;
+  // // Lodash, currently included via a script, is required for this line to work
+  // Lodash, now imported by this script
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
+// dyn.appendChild(component());
