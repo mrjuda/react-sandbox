@@ -1,4 +1,4 @@
-'use strict';
+import { ReactDOM, React } from 'react';
 
 const e = React.createElement;
 

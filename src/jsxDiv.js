@@ -1,4 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // jsxDiv.js
+import ReactDOM from 'react';
 
 const jsxDiv = document.getElementById('jsxDiv');
 const root = document.getElementById('root');
@@ -36,7 +39,7 @@ function formatName(user) {
 
 const user = {
   firstName: 'Harper',
-  lastName: 'Perez'
+  lastName: 'Perez',
 };
 
 const element = (
@@ -47,5 +50,5 @@ const element = (
 
 ReactDOM.render(
   element,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
